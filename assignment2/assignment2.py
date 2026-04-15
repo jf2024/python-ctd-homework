@@ -142,8 +142,27 @@ def create_minutes_set():
 minutes_set = create_minutes_set()
 
 #task14 - conversion to datetime
-
+from datetime import datetime
+def create_minutes_list():
+    list_minutes = list(minutes_set)
+    new_list = map(lambda x: (x[0], datetime.strptime(x[1], "%B %d, %Y")), list_minutes)
+    return list(new_list)
+    
+minutes_list = create_minutes_list()
+#print(minutes_list)
 
 
 #task15 - sorted list 
-#check user comment about this task in the "discussion" channel on slack
+def write_sorted_list():
+    sorted_minutes_list = sorted(minutes_list, key=lambda x: x[1])
+    back_to_original = list(map(lambda x: (x[0], datetime.strftime(x[1], "%B %d, %Y")), sorted_minutes_list))
+
+    with open('minutes.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(minutes1['fields'])
+        for row in back_to_original:
+            writer.writerow(row)
+
+    return back_to_original
+
+print(write_sorted_list())
