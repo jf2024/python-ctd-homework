@@ -1,0 +1,15 @@
+function: no_params
+positional parameters: none
+keyword parameters: none
+return: none
+------------
+function: variable_params
+positional parameters: (1, 2, 3, 4)
+keyword parameters: none
+return: True
+------------
+function: kwargs_decorator
+positional parameters: none
+keyword parameters: {'a': 1, 'b': 2}
+return: <function logger_decorator at 0x103548c20>
+------------
