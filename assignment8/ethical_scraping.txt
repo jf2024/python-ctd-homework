@@ -1,0 +1,18 @@
+1) Which sections of the website are restricted for crawling?
+Wikipedia restricts lots of sections, primarily focusing on administrative, backend, and 
+high-traffic interactive paths. Crawling is banned in directories containing user-specific pages, 
+internal edit logs and history feeds, and search queries. They also block access to a long list of 
+specific historical and controversial articles to prevent some scapers so it doesnt overload the 
+server and/or manipulate search trends.
+
+2) Are there specific rules for certain user agents?
+Yes, Wikipedia uses explicit rule targeting for different bots. I noticed the User-agent: *, where it blocks heavy 
+background actions like search queries and editing histories. Some examples are search engine bots like Googlebot, 
+Bingbot, and Applebot which are allowed to index most content pages for public search but are barred from 
+forum-like talk pages. On the other side, aggressive archival bots face complete blockades (Disallow: /) 
+in certain sub-domains to prevent heavy, repetitive server strain.
+
+3) Reflection: The Purpose of robots.txt and Ethical Scraping
+I think websites use a robots.txt file as a digital gatekeeper to manage automated traffic and protect their computing 
+infrastructure from getting crushed by aggressive web crawlers. It shows some guidelines or at least a framework for 
+ethical scraping so developers know what data is safe and what is safe to extract.
