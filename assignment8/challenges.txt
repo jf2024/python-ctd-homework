@@ -1,0 +1,9 @@
+I think a couple of challenges was first, the original link being provided 
+didn't show the full top 10 list, I decided to just use the link that does 
+show the top 10 list instead (maybe the point of the assignment was to use selenium to click
+over and go to the next page and then do the scraping but I wasn't sure on that)
+
+Another thing was making sure I was using the right tags/attributes to capture the information needed. I took a 
+class similar to this lesson for the week which discusses web scraping as well so I was referring to some old additional
+notes on that and using gemini to help me combine the learnings from this lesson and my other class to bridge any 
+misunderstandings I had and some differences between the two. 
